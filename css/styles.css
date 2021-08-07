@@ -1,0 +1,267 @@
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+    
+     :root {
+        --padding-container: 80px 0;
+    }
+    
+    * {
+        /* outline: 2px solid red; */
+    }
+    
+    .container {
+        width: 90%;
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: var(--padding-container);
+        overflow: hidden;
+    }
+    
+    .header {
+        height: 100vh;
+        padding: var(--padding-container);
+        background-image: radial-gradient(circle at 50% -20.71%, #ffffe0 0, #feffdc 8.33%, #f3ffd7 16.67%, #e6ffd3 25%, #d8fbcf 33.33%, #c7f7cc 41.67%, #b5f2c9 50%, #a1edc8 58.33%, #8de9c9 66.67%, #79e4cc 75%, #63e0d0 83.33%, #4bddd6 91.67%, #2fd9dd 100%);
+    }
+    
+    .header__container {
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+    
+    .header__img {
+        width: 45%;
+        text-align: center;
+    }
+    
+    .header__picture {
+        width: 80%;
+    }
+    
+    .header__title {
+        font-size: 3rem;
+    }
+    
+    .header__description {
+        font-size: 1.5rem;
+    }
+    
+    .dedicatoria__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: wrap-reverse;
+    }
+    
+    .dedicatoria__text {
+        width: 45%;
+        padding: 0 20px;
+    }
+    
+    .dedicatoria__descripcion {
+        line-height: 1.4;
+    }
+    
+    .dedicatoria__img {
+        width: 45%;
+        text-align: center;
+    }
+    
+    .dedicatoria__picture {
+        width: 80%;
+        margin: 0;
+    }
+    
+    .mensaje {
+        background-color: #31c3c3;
+    }
+    
+    .title {
+        color: #fff;
+        font-size: 2rem;
+    }
+    
+    .mensaje__container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .momentos__title--titulo {
+        margin-bottom: 5rem;
+        font-size: 2rem;
+        color: #068686;
+    }
+    
+    .momentos__cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .momentos__card {
+        text-align: center;
+        width: 30%;
+        box-shadow: 0 0 10px -5px black;
+        border-radius: 40px;
+    }
+    
+    .momentos__picture {
+        width: 100%;
+        height: 250px;
+        border-radius: 40px 40px 0 0;
+    }
+    
+    .momentos__title {
+        font-size: 1.5rem;
+        color: #068686;
+        margin: 20px 0;
+    }
+    
+    .momentos__description {
+        text-align: left;
+        font-weight: 200;
+        margin-bottom: 40px;
+    }
+    
+    .momentos__text {
+        padding: 0 35px;
+    }
+    
+    .gallery__img {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .gallery__picture {
+        width: 25%;
+        border-radius: 20px;
+        border: 2px solid #000;
+        box-shadow: 0 0 18px #000;
+        object-fit: cover;
+    }
+    
+    span {
+        display: inline-block;
+        margin-bottom: 40px;
+        font-weight: 200;
+    }
+    
+    .gallery__title {
+        font-size: 2rem;
+        color: #068686;
+    }
+    
+    .dedicatoria__title {
+        font-size: 2rem;
+        color: #068686;
+    }
+    
+    @media screen and (max-width: 900px) {
+        .header__img {
+            width: 75%;
+        }
+        .header__picture {
+            width: 80%;
+        }
+        .header__text {
+            margin-top: 40px;
+        }
+        .dedicatoria__container {
+            justify-content: center;
+        }
+        .dedicatoria__title {
+            font-size: 4rem;
+            text-align: center;
+        }
+        .dedicatoria__descripcion {
+            font-size: 1rem;
+        }
+        .dedicatoria__img {
+            width: 80%;
+        }
+        .dedicatoria__picture {
+            width: 80%;
+        }
+        .dedicatoria__text {
+            width: 95%;
+            text-align: justify;
+        }
+        .title {
+            font-size: 3rem;
+            text-align: center;
+            font-weight: 700;
+        }
+        .momentos__card {
+            width: 45%;
+            justify-content: space-evenly;
+            margin-bottom: 40px;
+        }
+        .gallery__picture {
+            width: 40%;
+            margin-bottom: 40px;
+        }
+        .gallery__title {
+            margin: 0;
+        }
+        span {
+            margin-bottom: 40px;
+        }
+    }
+    
+    @media screen and (max-width:450px) {
+        .container {
+            padding: 0;
+        }
+        .header__container {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-content: center;
+        }
+        .header__title {
+            font-size: 2rem;
+        }
+        .header__description {
+            font-size: 1.2rem;
+        }
+        .header__img {
+            height: 200px;
+            width: 90%;
+        }
+        .header__picture {
+            height: 300px;
+            width: 250px;
+        }
+        .dedicatoria__text {
+            padding: 40px 0;
+        }
+        .dedicatoria__title {
+            font-size: 2rem;
+        }
+        .dedicatoria__img {
+            margin-top: 80px;
+        }
+        .dedicatoria__descripcion {
+            font-size: .9rem;
+        }
+        .title {
+            font-size: 2rem;
+        }
+        .momentos__title--titulo {
+            margin-top: 60px;
+        }
+        .momentos__card {
+            width: 90%;
+        }
+        .gallery__container {
+            padding: 40px 0;
+        }
+        .gallery__picture {
+            width: 90%;
+        }
+    }
